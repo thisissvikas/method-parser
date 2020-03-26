@@ -1,0 +1,35 @@
+Phase 1: 2 Iterations
+------------------------------
+-> Design finalisation.
+-> Tech stack finalisation.
+ 
+-> Version Control Manager
+-> CTAGS Manager
+
+Phase 2: 3 Iterations
+-------------------------------
+-> Parser
+-> Command-line tool
+
+Phase 3: 2 Iterations
+-------------------------------
+-> Server / APIs
+-> Connecting Parser to Server
+-> Database
+
+Phase 4: 1 Iterations
+-------------------------------
+-> Basic UI to talk to APIs
+
+Phase 5: 2  Iterations
+-------------------------------
+-> Add on Features
+    -> Parsing without checkout
+    -> Analysis on Data
+    -> Code Duplication / Dead Code (Optional : May be developed as a part of another project)
+
+Phase 6: 1 Iterations  
+-------------------------------
+-> Complete UI    
+
+Note : 1 Iteration -> 2 weeks
