@@ -32,4 +32,6 @@ Phase 6: 1 Iterations
 -------------------------------
 -> Complete UI    
 
-Note : 1 Iteration -> 2 weeks
+Notes : 
+1 Iteration -> 2 weeks
+Start date : 23.03.2020
