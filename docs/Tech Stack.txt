@@ -1,11 +1,43 @@
-1. Tech stack for the server: Springboot, NodeJS, DJango 
-	-> Springboot because tech stack for parser would be entirely Java. 
-2. Tech stack for the parser: Java, Python 
-	-> Java because tech stack for server is Spring Boot
-3. Tech stack for GitHub handler: Java
-4. Tech stack for UI: React, AngularJS 
-	-> ReactJS is a JavaScript library that combines the speed of JavaScript and uses a new way of rendering webpages, making them highly dynamic and responsive to user input. 
-	  Also, it is compatible with Spring Boot.
-5. Tech stack for DB: MongoDB, MySQL
-	-> MongoDB is faster and in MongoDB, data is stored in JSON-like documents that can have varied structures. 
-	 To improve query speed, MongoDB can store related data together, which is accessed using the MongoDB query language.
+Tech Stacks
+-----------------------------------
+-----------------------------------
+
+Server
+----------------
+Selected: Spring Boot
+Other options considered : Django, Node
+
+Reason: 
+
+
+Parser
+-----------------
+Selected: Java
+Other options considered : Java, Python
+
+Reason:
+
+
+GitHub handler
+-----------------
+Selected: Java
+Other options considered : Java
+
+Reason:
+
+
+UI
+-----------------
+Selected: React
+Other options considered : React, AngularJS
+
+Reason: ReactJS is a JavaScript library that combines the speed of JavaScript and uses a new way of rendering webpages, making them highly dynamic and responsive to user input. 
+	    Also, it is compatible with Spring Boot.
+
+
+DB 
+-----------------
+Selected: PostgreSQL  (Tentative)
+Other options considered : MongoDB, MySQL, PostgreSQL
+
+Reason: PostgreSQL can store both SQL data as well as data in JSON format.
