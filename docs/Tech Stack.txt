@@ -1,0 +1,43 @@
+Tech Stacks
+-----------------------------------
+-----------------------------------
+
+Server
+----------------
+Selected: Spring Boot
+Other options considered : Django, Node
+
+Reason: 
+
+
+Parser
+-----------------
+Selected: Java
+Other options considered : Python
+
+Reason:
+
+
+GitHub handler
+-----------------
+Selected: Java
+Other options considered : 
+
+Reason:
+
+
+UI
+-----------------
+Selected: React
+Other options considered : AngularJS
+
+Reason: ReactJS is a JavaScript library that combines the speed of JavaScript and uses a new way of rendering webpages, making them highly dynamic and responsive to user input. 
+	    Also, it is compatible with Spring Boot.
+
+
+DB 
+-----------------
+Selected: PostgreSQL  (Tentative)
+Other options considered : MongoDB, MySQL
+
+Reason: PostgreSQL can store both SQL data as well as data in JSON format.
