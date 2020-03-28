@@ -1,14 +1,13 @@
 package com.vikas.method_parser.version_control_manager.model;
 
-public class RepoDetails extends SourceDetails{
-    // Specific fields need to be added here,
-	private String repoName;
-	
-	public String getRepoName() {
-		return repoName;
-	}
-	
-	public void setRepoName(String repoName) {
-		this.repoName = repoName;
-	}
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.List;
+
+public class RepoDetails extends SourceDetails {
+  @Getter @Setter private RepoHistory repoHistory;
+  @Getter @Setter private List<String> branchURLs;
+  @Getter @Setter private List<String> technologies;
+  @Getter @Setter private List<String> contributors;
 }

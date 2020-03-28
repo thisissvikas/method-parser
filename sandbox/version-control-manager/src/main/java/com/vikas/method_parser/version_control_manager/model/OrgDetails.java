@@ -1,15 +1,10 @@
 package com.vikas.method_parser.version_control_manager.model;
 
-public class OrgDetails extends SourceDetails{
-    // Specific fields need to be added here,
-	private String orgName;
-	
-	public String getOrgName() {
-		return orgName;
-	}
-	
-	public void setOrgName(String orgName) {
-		this.orgName = orgName;
-	}
-	
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.List;
+
+public class OrgDetails extends SourceDetails {
+  @Getter @Setter private List<RepoDetails> repoDetails;
 }
