@@ -6,7 +6,7 @@ import lombok.Setter;
 import java.util.List;
 
 public class RepoDetails extends SourceDetails {
-  @Getter @Setter private RepoHistory repoHistory;
+  @Getter @Setter private List<CommitHistory> repoHistory;
   @Getter @Setter private List<String> branchURLs;
   @Getter @Setter private List<String> technologies;
   @Getter @Setter private List<String> contributors;
