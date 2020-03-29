@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Google HTTP Client Library for Java
+-------------------------------------------------------------------------------               
+1.Written by Google, the Google HTTP Client Library for Java is a flexible, efficient, and powerful Java library for accessing any resource 
+on the web via HTTP.
+
+2.Pluggable HTTP transport abstraction that allows you to use any low-level library such as java.net.HttpURLConnection, Apache HTTP Client, 
+or URL Fetch on Google App Engine.
+
+3.Efficient JSON and XML data models for parsing and serialization of HTTP response and request content. 
+The JSON and XML libraries are also fully pluggable, and they include support for Jackson and Android's GSON libraries for JSON.
+
+
+
+-----------------------------------------------------------------------------------
+Jersey
+-----------------------------------------------------------------------------------
+1.Jersey RESTful Web Services framework is open source, production quality, a framework for developing RESTful Web Services in Java that provides 
+support for JAX-RS APIs and serves as a JAX-RS (JSR 311 & JSR 339) reference Implementation and initially provided by Sun Microsystem.
+
+2.Jersey framework is more than the JAX-RS Reference Implementation. Jersey provides its own API that extends the JAX-RS toolkit with 
+additional features and utilities to further simplify RESTful service and client development. 
+Jersey also exposes numerous extension SPIs so that developers may extend Jersey to best suit their needs.
+
+
+3.There are some challenges with Jersey-Spring integration, especially with AOP.
+
+4.One nice value-add feature of Jersey is the Jersey Test Framework which lets you run and test your Jersey REST services inside JUnit, 
+without the need to first deploy them to a stand-alone server and even before you commit your code to your repo.
+These tests are easy to write, you can run them before you even check in your Jersey web service code to make sure your service is working, 
+and they become part of your automated test suite which helps enforce the contract your services have with your clients.
+
+5.Reference Implementation
+-Usually the most cutting edge
+-Supports true asynchronous (ie web sockets etc...) connections through either Atmosphere or 2.0 version.
+-Has support for Spring and standard injection containers (ie @Inject).
+-Glassfish bundles it.
+-It's much more modular than the other JAX-RS projects.
+-It has a kick ass URI Builder
+-Does not necessarily require servlet container.
+-Grizzly support
+-Netty support (very early).
+-Swagger support
+
+-------------------------------------------------------------------------------------------
+RestLet
+-------------------------------------------------------------------------------------------
+1.Restlet Framework helps Java developers build better web APIs that follow the REST architecture style. 
+Restlet has a light core but thanks to its pluggable extension, it is also a comprehensive REST framework for Java. 
+
+2.It supports all REST concepts (Resource, Representation, Connector, Component, etc.) and is suitable for both client and server Web applications.
+It supports major Web standards like HTTP, SMTP, XML, JSON, OData, OAuth, RDF, RSS, WADL, and Atom.
+Many extensions are also available to integrate with Servlet, Spring, Jetty, Simple, JAXB, JAX-RS, JiBX, Velocity, FreeMarker, XStream, Jackson, SLF4J, SDC and much more!
+Another advantage of using Restlet framework is that Restlet based program can run as a standalone Java application. 
+The Restlet also supports Java EE environment with the help of Jetty web container. So this may result in a light-weight implementation and have a unique value that way.
+
+3.There are some challenges or manual work involved in de-marshalling the response into java object.
+
+4.Testing implementation not as strong as jersey.
+
+5.Reference Implementation
+-Very powerful but very complicated
+-Provides some low-level REST support
+-Does not require a servlet container
