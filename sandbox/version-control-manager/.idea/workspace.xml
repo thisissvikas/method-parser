@@ -38,7 +38,30 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="GITHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.vikas.method_parser.version_control_manager.util.GITHandler" />
+      <module name="version-control-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vikas.method_parser.version_control_manager.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GITHandler" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -58,6 +81,10 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="447" y="119" key="#Plugins/0.0.1707.920@0.0.1707.920" timestamp="1585387412586" />
+    <state x="447" y="119" key="#Project_Structure" timestamp="1585851073684">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="447" y="119" key="#Project_Structure/0.0.1707.920@0.0.1707.920" timestamp="1585851073684" />
     <state x="594" y="263" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585345162577">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
@@ -70,22 +97,42 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="597" y="21" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1707.920@0.0.1707.920" timestamp="1585390120827" />
-    <state width="1664" height="242" key="GridCell.Tab.0.bottom" timestamp="1585847471860">
+    <state width="451" height="466" key="DebuggerActiveHint" timestamp="1585850910374">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="242" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1585847471860" />
-    <state width="1664" height="242" key="GridCell.Tab.0.center" timestamp="1585847471860">
+    <state width="451" height="466" key="DebuggerActiveHint/0.0.1707.920@0.0.1707.920" timestamp="1585850910374" />
+    <state width="1664" height="300" key="GridCell.Tab.0.bottom" timestamp="1585851171376">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="242" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1585847471860" />
-    <state width="1664" height="242" key="GridCell.Tab.0.left" timestamp="1585847471860">
+    <state width="1664" height="300" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1585851171376" />
+    <state width="1664" height="300" key="GridCell.Tab.0.center" timestamp="1585851171376">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="242" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1585847471860" />
-    <state width="1664" height="242" key="GridCell.Tab.0.right" timestamp="1585847471860">
+    <state width="1664" height="300" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1585851171376" />
+    <state width="1664" height="300" key="GridCell.Tab.0.left" timestamp="1585851171376">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="242" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1585847471860" />
+    <state width="1664" height="300" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1585851171376" />
+    <state width="1664" height="300" key="GridCell.Tab.0.right" timestamp="1585851171376">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="300" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1585851171376" />
+    <state width="1664" height="300" key="GridCell.Tab.1.bottom" timestamp="1585850885000">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="300" key="GridCell.Tab.1.bottom/0.0.1707.920@0.0.1707.920" timestamp="1585850885000" />
+    <state width="1664" height="300" key="GridCell.Tab.1.center" timestamp="1585850885000">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="300" key="GridCell.Tab.1.center/0.0.1707.920@0.0.1707.920" timestamp="1585850885000" />
+    <state width="1664" height="300" key="GridCell.Tab.1.left" timestamp="1585850885000">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="300" key="GridCell.Tab.1.left/0.0.1707.920@0.0.1707.920" timestamp="1585850885000" />
+    <state width="1664" height="300" key="GridCell.Tab.1.right" timestamp="1585850885000">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1664" height="300" key="GridCell.Tab.1.right/0.0.1707.920@0.0.1707.920" timestamp="1585850885000" />
     <state x="364" y="103" key="SettingsEditor" timestamp="1585386541436">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
@@ -102,5 +149,26 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="516" y="196" width="672" height="678" key="search.everywhere.popup/0.0.1707.920@0.0.1707.920" timestamp="1585391941926" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/util/GITHandler.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/util/GITHandler.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/util/GITHandler.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
