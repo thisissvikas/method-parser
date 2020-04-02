@@ -13,53 +13,41 @@ import com.sun.jersey.api.client.WebResource;
 public class RESTCallHandler {
 
     /**
-     * To make a HTTP GET request and get String as output.
+     * To make a HTTP GET request and get ClientResponse as output.
      * @param uri : 
      * 		     URI of the GET service.
-     * @return output of the REST call.
+     * @return response of the REST call.
      */
-    public static String makeGETCall(String uri) {
+    public static ClientResponse makeGETCall(String uri) {
     	if(uri == null || uri.isEmpty()) {
     		System.out.println("URI cannot be null or empty for a REST call.");
     	}
-    	String output = null;
 		Client client = Client.create();
 		WebResource webResource = client
 		   .resource(uri);
 		ClientResponse response = webResource.accept("application/json")
                    .get(ClientResponse.class);
-		if (response.getStatus() != 200) {
-		   throw new RuntimeException("Failed : HTTP error code : "
-			+ response.getStatus());
-		}
-		output = response.getEntity(String.class);
-    	return output;
+    	return response;
     }
     
     /**
-     * To make a HTTP POST request and get String as output.
+     * To make a HTTP POST request and get ClientResponse as output.
      * @param uri : 
      * 		     URI of the POST service.
      * @param formParams : 
      * 			Input to be uploaded.
-     * @return output of the REST call.
+     * @return response of the REST call.
      */
-    public static String makePOSTCall(String uri, MultivaluedMap<String, String> formParams) {
-    	if(uri == null || uri.isEmpty()) {
-    		System.out.println("URI cannot be null or empty for a REST call.");
+    public static ClientResponse makePOSTCall(String uri, MultivaluedMap<String, String> formParams) {
+    	if(uri == null || uri.isEmpty() || formParams == null || formParams.isEmpty()) {
+    		System.out.println("URI or parameters cannot be null or empty for a POST REST call.");
     	}
-    	String output = null;
 		Client client = Client.create();
 		WebResource webResource = client
 		   .resource(uri);
 		ClientResponse response = webResource.accept("application/json")
                    .post(ClientResponse.class, formParams);
-		if (response.getStatus() != 200) {
-		   throw new RuntimeException("Failed : HTTP error code : "
-			+ response.getStatus());
-		}
-		output = response.getEntity(String.class);
-    	return output;
+    	return response;
     }
-        
+    
 }
