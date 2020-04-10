@@ -3,6 +3,7 @@ package com.vikas.method_parser.version_control_manager.details.fetcher;
 import com.sun.jersey.api.client.ClientResponse;
 import com.vikas.method_parser.version_control_manager.model.CommitHistory;
 import com.vikas.method_parser.version_control_manager.model.RepoDetails;
+import com.vikas.method_parser.version_control_manager.model.SourceDetails;
 import com.vikas.method_parser.version_control_manager.model.UserInput;
 import com.vikas.method_parser.version_control_manager.util.GITHandler;
 import com.vikas.method_parser.version_control_manager.util.RESTCallHandler;
@@ -12,6 +13,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.TimeZone;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -22,8 +24,8 @@ import java.net.URISyntaxException;
 import java.text.SimpleDateFormat;
 
 public class RepoDetailsFetcher implements SourceDetailsFetcher{
-    public RepoDetails getSourceDetails(UserInput userInput) {
-    	RepoDetails repoDetails = new RepoDetails();
+    public SourceDetails getSourceDetails(UserInput userInput) {
+    	SourceDetails repoDetails = new SourceDetails();
         try {
             repoDetails = getRepoDetails(GITHandler.getGITRepo(userInput));
         } catch (URISyntaxException | ParseException e){
@@ -33,21 +35,22 @@ public class RepoDetailsFetcher implements SourceDetailsFetcher{
         return repoDetails;
     }
 
-    private RepoDetails getRepoDetails(JSONObject jsonObject) throws ParseException {
-    	RepoDetails repoDetails = new RepoDetails();
+    private SourceDetails getRepoDetails(JSONObject jsonObject) throws ParseException {
+    	SourceDetails sourceDetails = new RepoDetails();
+    	//RepoDetails repoDetails = new RepoDetails();
     	String name = (String) jsonObject.get("name");
     	String url = (String) jsonObject.get("html_url");
     	List<String> branchURLs = getAllBranchUrls((String) jsonObject.get("branches_url"), (String) jsonObject.get("html_url"));
     	List<String> technologies = getAllTechnologies((String) jsonObject.get("languages_url"));
     	List<String> contributors = getAllContributors((String) jsonObject.get("contributors_url"));
     	List<CommitHistory> commitHistory = getCommitHistory((String) jsonObject.get("commits_url"));
-    	repoDetails.setName(name);
-    	repoDetails.setUrl(url);
-    	repoDetails.setBranchURLs(branchURLs);
-    	repoDetails.setTechnologies(technologies);
-    	repoDetails.setContributors(contributors);
-    	repoDetails.setRepoHistory(commitHistory);
-    	return repoDetails;
+    	sourceDetails.setName(name);
+    	sourceDetails.setUrl(url);
+    	((RepoDetails) sourceDetails).setBranchURLs(branchURLs);
+    	((RepoDetails) sourceDetails).setTechnologies(technologies);
+    	((RepoDetails) sourceDetails).setContributors(contributors);
+    	((RepoDetails) sourceDetails).setRepoHistory(commitHistory);
+    	return sourceDetails;
     }
     
     public List<CommitHistory> getCommitHistory(String commitUrl) throws ParseException {
@@ -67,8 +70,9 @@ public class RepoDetailsFetcher implements SourceDetailsFetcher{
     	String name = (String) child.get("name");
     	String dateTime = (String) child.get("date");
     	Date date = null;
-	    try {
-	    	date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ").parse(dateTime);
+    	SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
+        try {
+	        date = formatter.parse(dateTime);
 	    } catch (java.text.ParseException e) {
 	    	// TODO Auto-generated catch block
 	    	e.printStackTrace();
