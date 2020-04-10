@@ -12,10 +12,18 @@ import java.net.URISyntaxException;
 public class GITHandler {
   public static final String GIT_API_URL = "https://api.github.com";
 
-  public static JSONObject getGITRepo(UserInput userInput) throws URISyntaxException, ParseException {
+  public static JSONObject getGITRepo(UserInput userInput) throws ParseException {
     String url = GIT_API_URL + "/users/" + userInput.getUserName() + "/repos";
     ClientResponse clientResponse = RESTCallHandler.makeGETCall(url);
     return getSpecificRepo(clientResponse, userInput.getRepositoryName());
+  }
+
+  public static JSONArray getAllGITReposForOrg(UserInput userInput) throws ParseException {
+    String url = GIT_API_URL + "/users/" + userInput.getUserName() + "/repos";
+    ClientResponse clientResponse = RESTCallHandler.makeGETCall(url);
+    String output = clientResponse.getEntity(String.class);
+    JSONArray allRepos =  (JSONArray) new JSONParser().parse(output);
+    return allRepos;
   }
 
   private static JSONObject getSpecificRepo(ClientResponse clientResponse, String repositoryName) throws ParseException {

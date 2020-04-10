@@ -6,5 +6,5 @@ import lombok.Setter;
 import java.util.List;
 
 public class OrgDetails extends SourceDetails {
-  @Getter @Setter private List<RepoDetails> repoDetails;
+  @Getter @Setter private List<SourceDetails> repoDetails;
 }

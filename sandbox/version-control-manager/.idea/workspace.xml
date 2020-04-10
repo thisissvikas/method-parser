@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4465eb34-f6a1-4205-9585-3f4869a59867" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/details/fetcher/OrgDetailsFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/details/fetcher/OrgDetailsFetcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/details/fetcher/RepoDetailsFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/details/fetcher/RepoDetailsFetcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/model/OrgDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/model/OrgDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/util/GITHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/util/GITHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,17 +185,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/util/GITHandler.java</url>
-          <line>26</line>
+          <line>34</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/util/GITHandler.java</url>
-          <line>29</line>
+          <line>37</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/details/fetcher/RepoDetailsFetcher.java</url>
-          <line>29</line>
+          <line>26</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
