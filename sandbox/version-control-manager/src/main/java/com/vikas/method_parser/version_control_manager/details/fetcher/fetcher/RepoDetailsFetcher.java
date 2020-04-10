@@ -67,13 +67,12 @@ public class RepoDetailsFetcher implements SourceDetailsFetcher {
     JSONObject child = (JSONObject) parent.get("author");
     String name = (String) child.get("name");
     String dateTime = (String) child.get("date");
-    Date date = null;
     SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
+    Date date = null;
     try {
-      date = formatter.parse(dateTime);
+        date = formatter.parse(dateTime.replaceAll("Z$", "+0000"));
     } catch (java.text.ParseException e) {
-      // TODO Auto-generated catch block
-      e.printStackTrace();
+        e.printStackTrace();
     }
     commitHistoryObject.setUser(name);
     commitHistoryObject.setDateTime(date);
