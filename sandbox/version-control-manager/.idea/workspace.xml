@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4465eb34-f6a1-4205-9585-3f4869a59867" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/details/fetcher/RepoDetailsFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/details/fetcher/RepoDetailsFetcher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,46 +123,46 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state width="451" height="466" key="DebuggerActiveHint/0.0.1707.920@0.0.1707.920" timestamp="1585850910374" />
-    <state width="1664" height="242" key="GridCell.Tab.0.bottom" timestamp="1585852265656">
+    <state width="1664" height="300" key="GridCell.Tab.0.bottom" timestamp="1585852618328">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="242" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1585852265656" />
-    <state width="1664" height="242" key="GridCell.Tab.0.center" timestamp="1585852265656">
+    <state width="1664" height="300" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1585852618328" />
+    <state width="1664" height="300" key="GridCell.Tab.0.center" timestamp="1585852618328">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="242" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1585852265656" />
-    <state width="1664" height="242" key="GridCell.Tab.0.left" timestamp="1585852265652">
+    <state width="1664" height="300" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1585852618328" />
+    <state width="1664" height="300" key="GridCell.Tab.0.left" timestamp="1585852618328">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="242" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1585852265652" />
-    <state width="1664" height="242" key="GridCell.Tab.0.right" timestamp="1585852265656">
+    <state width="1664" height="300" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1585852618328" />
+    <state width="1664" height="300" key="GridCell.Tab.0.right" timestamp="1585852618328">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="242" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1585852265656" />
-    <state width="1664" height="300" key="GridCell.Tab.1.bottom" timestamp="1585852072473">
+    <state width="1664" height="300" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1585852618328" />
+    <state width="1664" height="300" key="GridCell.Tab.1.bottom" timestamp="1585852618328">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="300" key="GridCell.Tab.1.bottom/0.0.1707.920@0.0.1707.920" timestamp="1585852072473" />
-    <state width="1664" height="300" key="GridCell.Tab.1.center" timestamp="1585852072473">
+    <state width="1664" height="300" key="GridCell.Tab.1.bottom/0.0.1707.920@0.0.1707.920" timestamp="1585852618328" />
+    <state width="1664" height="300" key="GridCell.Tab.1.center" timestamp="1585852618328">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="300" key="GridCell.Tab.1.center/0.0.1707.920@0.0.1707.920" timestamp="1585852072473" />
-    <state width="1664" height="300" key="GridCell.Tab.1.left" timestamp="1585852072473">
+    <state width="1664" height="300" key="GridCell.Tab.1.center/0.0.1707.920@0.0.1707.920" timestamp="1585852618328" />
+    <state width="1664" height="300" key="GridCell.Tab.1.left" timestamp="1585852618328">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="300" key="GridCell.Tab.1.left/0.0.1707.920@0.0.1707.920" timestamp="1585852072473" />
-    <state width="1664" height="300" key="GridCell.Tab.1.right" timestamp="1585852072473">
+    <state width="1664" height="300" key="GridCell.Tab.1.left/0.0.1707.920@0.0.1707.920" timestamp="1585852618328" />
+    <state width="1664" height="300" key="GridCell.Tab.1.right" timestamp="1585852618328">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="300" key="GridCell.Tab.1.right/0.0.1707.920@0.0.1707.920" timestamp="1585852072473" />
+    <state width="1664" height="300" key="GridCell.Tab.1.right/0.0.1707.920@0.0.1707.920" timestamp="1585852618328" />
     <state x="364" y="103" key="SettingsEditor" timestamp="1585852484865">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="364" y="103" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1585852484865" />
-    <state x="551" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1585852112176">
+    <state x="551" y="284" key="com.intellij.ide.util.TipDialog" timestamp="1586521318035">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="551" y="284" key="com.intellij.ide.util.TipDialog/0.0.1707.920@0.0.1707.920" timestamp="1585852112176" />
+    <state x="551" y="284" key="com.intellij.ide.util.TipDialog/0.0.1707.920@0.0.1707.920" timestamp="1586521318035" />
     <state x="597" y="79" key="refactoring.ChangeSignatureDialog" timestamp="1585387357550">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
@@ -191,7 +192,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/vikas/method_parser/version_control_manager/details/fetcher/RepoDetailsFetcher.java</url>
-          <line>14</line>
+          <line>29</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

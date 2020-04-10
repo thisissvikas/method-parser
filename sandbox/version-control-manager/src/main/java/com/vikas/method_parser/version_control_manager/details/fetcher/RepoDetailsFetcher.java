@@ -36,21 +36,20 @@ public class RepoDetailsFetcher implements SourceDetailsFetcher{
     }
 
     private SourceDetails getRepoDetails(JSONObject jsonObject) throws ParseException {
-    	SourceDetails sourceDetails = new RepoDetails();
-    	//RepoDetails repoDetails = new RepoDetails();
+    	RepoDetails repoDetails = new RepoDetails();
     	String name = (String) jsonObject.get("name");
     	String url = (String) jsonObject.get("html_url");
     	List<String> branchURLs = getAllBranchUrls((String) jsonObject.get("branches_url"), (String) jsonObject.get("html_url"));
     	List<String> technologies = getAllTechnologies((String) jsonObject.get("languages_url"));
     	List<String> contributors = getAllContributors((String) jsonObject.get("contributors_url"));
     	List<CommitHistory> commitHistory = getCommitHistory((String) jsonObject.get("commits_url"));
-    	sourceDetails.setName(name);
-    	sourceDetails.setUrl(url);
-    	((RepoDetails) sourceDetails).setBranchURLs(branchURLs);
-    	((RepoDetails) sourceDetails).setTechnologies(technologies);
-    	((RepoDetails) sourceDetails).setContributors(contributors);
-    	((RepoDetails) sourceDetails).setRepoHistory(commitHistory);
-    	return sourceDetails;
+        repoDetails.setName(name);
+        repoDetails.setUrl(url);
+        repoDetails.setBranchURLs(branchURLs);
+        repoDetails.setTechnologies(technologies);
+        repoDetails.setContributors(contributors);
+        repoDetails.setRepoHistory(commitHistory);
+    	return repoDetails;
     }
     
     public List<CommitHistory> getCommitHistory(String commitUrl) throws ParseException {
