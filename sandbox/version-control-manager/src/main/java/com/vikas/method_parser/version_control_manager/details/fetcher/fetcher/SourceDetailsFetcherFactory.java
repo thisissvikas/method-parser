@@ -1,6 +1,6 @@
-package com.vikas.method_parser.version_control_manager.details.fetcher;
+package com.vikas.method_parser.version_control_manager.details.fetcher.fetcher;
 
-import com.vikas.method_parser.version_control_manager.model.UserInput;
+import com.vikas.method_parser.version_control_manager.details.fetcher.model.UserInput;
 
 public class SourceDetailsFetcherFactory {
     public static SourceDetailsFetcher getSourceDetailsFetcher(UserInput userInput){

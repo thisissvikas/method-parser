@@ -1,12 +1,12 @@
-package com.vikas.method_parser.version_control_manager.details.fetcher;
+package com.vikas.method_parser.version_control_manager.details.fetcher.fetcher;
 
 import com.sun.jersey.api.client.ClientResponse;
-import com.vikas.method_parser.version_control_manager.model.CommitHistory;
-import com.vikas.method_parser.version_control_manager.model.RepoDetails;
-import com.vikas.method_parser.version_control_manager.model.SourceDetails;
-import com.vikas.method_parser.version_control_manager.model.UserInput;
-import com.vikas.method_parser.version_control_manager.util.GITHandler;
-import com.vikas.method_parser.version_control_manager.util.RESTCallHandler;
+import com.vikas.method_parser.version_control_manager.details.fetcher.model.CommitHistory;
+import com.vikas.method_parser.version_control_manager.details.fetcher.model.RepoDetails;
+import com.vikas.method_parser.version_control_manager.details.fetcher.model.SourceDetails;
+import com.vikas.method_parser.version_control_manager.details.fetcher.model.UserInput;
+import com.vikas.method_parser.version_control_manager.details.fetcher.util.GITHandler;
+import com.vikas.method_parser.version_control_manager.details.fetcher.util.RESTCallHandler;
 
 import java.util.ArrayList;
 import java.util.Date;

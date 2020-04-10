@@ -1,4 +1,4 @@
-package com.vikas.method_parser.version_control_manager.util;
+package com.vikas.method_parser.version_control_manager.details.fetcher.util;
 
 import javax.ws.rs.core.MultivaluedMap;
 

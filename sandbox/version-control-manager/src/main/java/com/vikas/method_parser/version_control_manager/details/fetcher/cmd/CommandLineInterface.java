@@ -1,6 +1,6 @@
-package com.vikas.method_parser.version_control_manager.cmd;
+package com.vikas.method_parser.version_control_manager.details.fetcher.cmd;
 
-import com.vikas.method_parser.version_control_manager.model.UserInput;
+import com.vikas.method_parser.version_control_manager.details.fetcher.model.UserInput;
 
 public class CommandLineInterface {
   public static UserInput getUserInput(String[] args) {
