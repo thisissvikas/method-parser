@@ -1,5 +1,11 @@
 package com.vikas.method_parser.version_control_manager.details.fetcher.util;
 
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.MultivaluedMap;
 
 import com.sun.jersey.api.client.Client;
@@ -10,6 +16,7 @@ import com.sun.jersey.api.client.WebResource;
  * Used to make Rest Service calls.
  *
  */
+@Path("RESTCallHandler")
 public class RESTCallHandler {
 
     /**
@@ -18,7 +25,9 @@ public class RESTCallHandler {
      * 		     URI of the GET service.
      * @return response of the REST call.
      */
-    public static ClientResponse makeGETCall(String uri) {
+	@GET
+	@Produces("application/json")
+    public static ClientResponse makeGETCall(@QueryParam("uri") String uri) {
     	if(uri == null || uri.isEmpty()) {
     		System.out.println("URI cannot be null or empty for a REST call.");
     	}
