@@ -20,7 +20,12 @@ import org.json.simple.parser.ParseException;
 
 import java.text.SimpleDateFormat;
 
+/**
+ * Used to get repository details.
+ * 
+ */
 public class RepoDetailsFetcher implements SourceDetailsFetcher {
+	
   public SourceDetails getSourceDetails(UserInput userInput) {
     SourceDetails repoDetails = new SourceDetails();
     try {
@@ -32,6 +37,12 @@ public class RepoDetailsFetcher implements SourceDetailsFetcher {
     return repoDetails;
   }
 
+  /**
+   * To get all the repository details.
+   * @param jsonObject : JSON containing all github information for a user.
+   * @return Repository details for a user.
+   * @throws ParseException
+   */
   public SourceDetails getRepoDetails(JSONObject jsonObject) throws ParseException {
     RepoDetails repoDetails = new RepoDetails();
     String name = (String) jsonObject.get("name");
@@ -51,6 +62,12 @@ public class RepoDetailsFetcher implements SourceDetailsFetcher {
     return repoDetails;
   }
 
+  /**
+   * TO get a list of Commit History in a repository.
+   * @param commitUrl : URL containing information about commit history.
+   * @return List of commit history.
+   * @throws ParseException
+   */
   public List<CommitHistory> getCommitHistory(String commitUrl) throws ParseException {
     CommitHistory commitHistoryObject = new CommitHistory();
     List<CommitHistory> commitHistory = new ArrayList<>();
@@ -80,6 +97,13 @@ public class RepoDetailsFetcher implements SourceDetailsFetcher {
     return commitHistory;
   }
 
+  /**
+   * To get list of branches url in a repository.
+   * @param branchesUrl : URL containing information about branches in a repository.
+   * @param htmlUrl : HTML UTL of a repository.
+   * @return List of branch URLs ina repository.
+   * @throws ParseException
+   */
   public List<String> getAllBranchUrls(String branchesUrl, String htmlUrl) throws ParseException {
     List<String> branchUrls = new ArrayList<>();
     branchesUrl = branchesUrl.replaceAll("\\{.*\\}", "");
@@ -93,6 +117,12 @@ public class RepoDetailsFetcher implements SourceDetailsFetcher {
     return branchUrls;
   }
 
+  /**
+   * To get list of technologies used in a repository.
+   * @param languageUrl : URL containing technology list.
+   * @return List of technologies.
+   * @throws ParseException
+   */
   public List<String> getAllTechnologies(String languageUrl) throws ParseException {
     List<String> technologies = new ArrayList<>();
     ClientResponse clientResponse = RESTCallHandler.makeGETCall(languageUrl);
@@ -102,6 +132,12 @@ public class RepoDetailsFetcher implements SourceDetailsFetcher {
     return technologies;
   }
 
+  /**
+   * To get list of all the contributors of a repository.
+   * @param contributorsUrl : URL containing repository's contributors' information.
+   * @return List of contributors
+   * @throws ParseException
+   */
   public List<String> getAllContributors(String contributorsUrl) throws ParseException {
     List<String> contributors = new ArrayList<>();
     ClientResponse clientResponse = RESTCallHandler.makeGETCall(contributorsUrl);

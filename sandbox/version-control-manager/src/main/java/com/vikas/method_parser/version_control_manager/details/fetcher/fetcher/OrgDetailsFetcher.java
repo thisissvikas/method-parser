@@ -11,7 +11,17 @@ import org.json.simple.parser.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * To get organization details.
+ *
+ */
 public class OrgDetailsFetcher implements SourceDetailsFetcher {
+
+     /**
+	   * To get organization details of a user.
+	   * @param userInput : Information of a user like username, url, org name and repo name.
+	   * @return Organization details for a user.
+	   */
   public SourceDetails getSourceDetails(UserInput userInput) {
     OrgDetails orgDetails = new OrgDetails();
     List<SourceDetails> repoDetails = new ArrayList<>();

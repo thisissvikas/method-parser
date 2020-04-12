@@ -5,6 +5,10 @@ import lombok.Setter;
 
 import java.util.List;
 
+/**
+ * Model class for source details.
+ *
+ */
 public class RepoDetails extends SourceDetails {
   @Getter @Setter private List<CommitHistory> repoHistory;
   @Getter @Setter private List<String> branchURLs;

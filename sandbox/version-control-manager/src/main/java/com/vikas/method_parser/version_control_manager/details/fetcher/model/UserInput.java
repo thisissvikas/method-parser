@@ -3,6 +3,10 @@ package com.vikas.method_parser.version_control_manager.details.fetcher.model;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * Model class for user input.
+ *
+ */
 public class UserInput {
   @Getter @Setter private String url;
   @Getter @Setter private String userName;

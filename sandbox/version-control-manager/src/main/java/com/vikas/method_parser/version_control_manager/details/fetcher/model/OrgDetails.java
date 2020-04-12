@@ -5,6 +5,10 @@ import lombok.Setter;
 
 import java.util.List;
 
+/**
+ * Model class for organization details.
+ *
+ */
 public class OrgDetails extends SourceDetails {
   @Getter @Setter private List<SourceDetails> repoDetails;
 }

@@ -5,6 +5,10 @@ import lombok.Setter;
 
 import java.util.Date;
 
+/**
+ * Model class for commit history of a repository.
+ *
+ */
 public class CommitHistory {
   @Getter @Setter private String commitId;
   @Getter @Setter private String user;
