@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * Model class for source details.
+ * Model for source details.
  *
  */
 public class SourceDetails {

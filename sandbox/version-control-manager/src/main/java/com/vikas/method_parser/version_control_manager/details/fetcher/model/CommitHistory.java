@@ -6,7 +6,7 @@ import lombok.Setter;
 import java.util.Date;
 
 /**
- * Model class for commit history of a repository.
+ * Model for commit history of a repository.
  *
  */
 public class CommitHistory {

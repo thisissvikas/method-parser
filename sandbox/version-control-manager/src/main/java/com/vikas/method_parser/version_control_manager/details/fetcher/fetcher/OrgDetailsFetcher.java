@@ -12,15 +12,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * To get organization details.
+ * Used to get organization details.
  *
  */
 public class OrgDetailsFetcher implements SourceDetailsFetcher {
 
      /**
-	   * To get organization details of a user.
+	   * Used to get organization details based on user details.
 	   * @param userInput : Information of a user like username, url, org name and repo name.
-	   * @return Organization details for a user.
+	   * @return Organization details based on a user.
 	   */
   public SourceDetails getSourceDetails(UserInput userInput) {
     OrgDetails orgDetails = new OrgDetails();

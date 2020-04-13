@@ -4,7 +4,7 @@ import com.vikas.method_parser.version_control_manager.details.fetcher.model.Sou
 import com.vikas.method_parser.version_control_manager.details.fetcher.model.UserInput;
 
 /**
- * To generate an instance of {@link VersionControlManager}
+ * A skeleton for managing version control based on user's input.
  *
  */
 public interface VersionControlManager {

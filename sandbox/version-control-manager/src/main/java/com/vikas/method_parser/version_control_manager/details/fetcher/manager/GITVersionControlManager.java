@@ -8,8 +8,8 @@ import com.vikas.method_parser.version_control_manager.details.fetcher.model.Use
 public class GITVersionControlManager implements VersionControlManager{
 	
 	/**
-	 * To get the source details from user input.
-	 * @param userInput : Input of user.
+	 * Used to get the source details for user input.
+	 * @param userInput : Input given by the user.
 	 * @return source details.
 	 */
     public SourceDetails getSourceDetail(UserInput userInput) {

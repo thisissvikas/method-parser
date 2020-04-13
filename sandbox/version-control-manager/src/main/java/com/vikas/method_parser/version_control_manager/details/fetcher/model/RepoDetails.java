@@ -6,7 +6,7 @@ import lombok.Setter;
 import java.util.List;
 
 /**
- * Model class for source details.
+ * Model for source details.
  *
  */
 public class RepoDetails extends SourceDetails {

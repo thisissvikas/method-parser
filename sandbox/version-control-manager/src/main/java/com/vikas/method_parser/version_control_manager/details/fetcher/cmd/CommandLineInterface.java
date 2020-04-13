@@ -3,12 +3,12 @@ package com.vikas.method_parser.version_control_manager.details.fetcher.cmd;
 import com.vikas.method_parser.version_control_manager.details.fetcher.model.UserInput;
 
 /**
- * To get user input.
+ * Used to handle all the command line interactions.
  *
  */
 public class CommandLineInterface {
 	/**
-	 * To get input arguments from the user.
+	 * Used to get user input from command line.
 	 * @param args
 	 * @return user input data.
 	 */

@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * Model class for user input.
+ * Model for user input.
  *
  */
 public class UserInput {

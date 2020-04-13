@@ -3,7 +3,7 @@ package com.vikas.method_parser.version_control_manager.details.fetcher.fetcher;
 import com.vikas.method_parser.version_control_manager.details.fetcher.model.UserInput;
 
 /**
- * Factory class to return the instance of {@link SourceDetailsFetcher}.
+ * Factory to return the instance of {@link SourceDetailsFetcher} based on user input.
  *
  */
 public class SourceDetailsFetcherFactory {
