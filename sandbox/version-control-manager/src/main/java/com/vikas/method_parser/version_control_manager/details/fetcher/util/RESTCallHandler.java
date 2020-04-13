@@ -1,6 +1,5 @@
 package com.vikas.method_parser.version_control_manager.details.fetcher.util;
 
-import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MultivaluedMap;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
@@ -18,7 +17,7 @@ public class RESTCallHandler {
      * 		     URI of the GET service.
      * @return response of the REST call.
      */
-    public static ClientResponse makeGETCall(@QueryParam("uri") String uri) {
+    public static ClientResponse makeGETCall(String uri) {
     	if(uri == null || uri.isEmpty()) {
     		System.out.println("URI cannot be null or empty for a REST call.");
     	}

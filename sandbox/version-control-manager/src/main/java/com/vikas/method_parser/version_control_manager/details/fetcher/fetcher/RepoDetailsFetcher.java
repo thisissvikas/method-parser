@@ -41,7 +41,7 @@ public class RepoDetailsFetcher implements SourceDetailsFetcher {
    * Used to get all the repository details.
    * @param jsonObject : JSON containing all github information for a user.
    * @return Repository details.
-   * @throws ParseException when the json cannot be parsed.
+   * @throws ParseException if wrong format of json is encountered while parsing.
    */
   public SourceDetails getRepoDetails(JSONObject jsonObject) throws ParseException {
     RepoDetails repoDetails = new RepoDetails();
@@ -66,7 +66,7 @@ public class RepoDetailsFetcher implements SourceDetailsFetcher {
    * Used to get a list of Commit History in a repository.
    * @param commitUrl : URL containing information about commit history.
    * @return List of commit history.
-   * @throws ParseException when the json cannot be parsed.
+   * @throws ParseException if wrong format of json is encountered while parsing.
    */
   public List<CommitHistory> getCommitHistory(String commitUrl) throws ParseException {
     CommitHistory commitHistoryObject = new CommitHistory();
@@ -103,10 +103,11 @@ public class RepoDetailsFetcher implements SourceDetailsFetcher {
    * @param branchesUrl : URL containing information about branches in a repository.
    * @param htmlUrl : HTML UTL of a repository.
    * @return List of branch URLs in a repository.
-   * @throws ParseException when the json cannot be parsed.
+   * @throws ParseException if wrong format of json is encountered while parsing.
    */
   public List<String> getAllBranchUrls(String branchesUrl, String htmlUrl) throws ParseException {
     List<String> branchUrls = new ArrayList<>();
+    //remove the curly braces and the content between them.
     branchesUrl = branchesUrl.replaceAll("\\{.*\\}", "");
     ClientResponse clientResponse = RESTCallHandler.makeGETCall(branchesUrl);
     String output = clientResponse.getEntity(String.class);
@@ -122,7 +123,7 @@ public class RepoDetailsFetcher implements SourceDetailsFetcher {
    * Used to get list of technologies used in a repository.
    * @param languageUrl : URL containing technology list.
    * @return List of technologies.
-   * @throws ParseException when the json cannot be parsed.
+   * @throws ParseException if wrong format of json is encountered while parsing.
    */
   public List<String> getAllTechnologies(String languageUrl) throws ParseException {
     List<String> technologies = new ArrayList<>();
@@ -137,9 +138,9 @@ public class RepoDetailsFetcher implements SourceDetailsFetcher {
    * Used to get list of all the contributors of a repository.
    * @param contributorsUrl : URL containing repository's contributors' information.
    * @return List of contributors
-   * @throws ParseException when the json cannot be parsed.
+   * @throws ParseException if wrong format of json is encountered while parsing.
    */
-  public List<String> getAllContributors(String contributorsUrl) throws ParseException {
+  public List<String> getAllContributors(String contributorsUrl) throws ParseException  {
     List<String> contributors = new ArrayList<>();
     ClientResponse clientResponse = RESTCallHandler.makeGETCall(contributorsUrl);
     String output = clientResponse.getEntity(String.class);

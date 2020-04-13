@@ -7,11 +7,12 @@ import com.vikas.method_parser.version_control_manager.details.fetcher.model.Use
  *
  */
 public class CommandLineInterface {
-	/**
-	 * Used to get user input from command line.
-	 * @param args
-	 * @return user input data.
-	 */
+	
+  /**
+   * Used to get user input from command line.
+   * @param args : input like username, organization name and repository name.
+   * @return user input data.
+   */
   public static UserInput getUserInput(String[] args) {
     UserInput userInput = new UserInput();
     userInput.setUserName("krvikas1011");

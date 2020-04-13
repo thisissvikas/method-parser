@@ -14,7 +14,7 @@ public class GITHandler {
    * Used to get a specific git repo details of a user.
    * @param userInput : Input details of a user.
    * @return : Details of a specific repository.
-   * @throws ParseException when json cannot be parsed.
+   * @throws ParseException if wrong format of json is encountered while parsing.
    */
   public static JSONObject getGITRepo(UserInput userInput) throws ParseException {
     String url = GIT_API_URL + "/users/" + userInput.getUserName() + "/repos";
@@ -26,7 +26,7 @@ public class GITHandler {
    * Used to get details of all git repositories in an org for a user.
    * @param userInput : Input details for a user.
    * @return : All git repositories in an organization.
-   * @throws ParseException when json cannot be parsed.
+   * @throws ParseException if wrong format of json is encountered while parsing.
    */
   public static JSONArray getAllGITReposForOrg(UserInput userInput) throws ParseException {
     String url = GIT_API_URL + "/users/" + userInput.getUserName() + "/repos";
@@ -41,7 +41,7 @@ public class GITHandler {
    * @param clientResponse : Output of the REST call {@link makeGETCall} made to the url.
    * @param repositoryName : Name of the repository whose info is required.
    * @return Details of the repository.
-   * @throws ParseException when json cannot be parsed.
+   * @throws ParseException if wrong format of json is encountered while parsing.
    */
   private static JSONObject getSpecificRepo(ClientResponse clientResponse, String repositoryName) throws ParseException {
     String output = clientResponse.getEntity(String.class);
