@@ -1,7 +1,6 @@
 package com.vikas.method_parser.version_control_manager.details.fetcher.util;
 
 import javax.ws.rs.core.MultivaluedMap;
-
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
