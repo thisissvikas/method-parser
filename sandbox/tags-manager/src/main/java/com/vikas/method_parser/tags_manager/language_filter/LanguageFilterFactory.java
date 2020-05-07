@@ -8,9 +8,9 @@ public class LanguageFilterFactory {
         return new CTAGSLanguageFilter();
     }
     
-    public static List<LanguageNames> getLanguages(List<String> languageList) {
-		List<LanguageNames> languageListForCTags = new ArrayList<LanguageNames>();
-		LanguageNames name = getLanguageName(languageList);
+    public static List<Languages> getLanguages(List<String> languageList) {
+		List<Languages> languageListForCTags = new ArrayList<Languages>();
+		Languages name = getLanguageName(languageList);
 		if (name != null) {
 			try {
 				switch (name) {
@@ -53,23 +53,23 @@ public class LanguageFilterFactory {
 		return languageListForCTags;
 	}
 
-	private static LanguageNames getLanguageName(List<String> languages) {
+	private static Languages getLanguageName(List<String> languages) {
 		for(String language : languages) {
 			language = language.toLowerCase();
-			if (language.equals("c++") || language.equals("cplusplus") || language.equals("c plus plus")) {
-				return LanguageNames.CPP;
-			} else if (language.equals("c#") || language.equals("csharp") || language.contentEquals("c sharp")) { // $NON-NLS-1$
-				return LanguageNames.CSHARP;
+			if (language.equals("c++") || language.equals("cpp")) {
+				return Languages.CPP;
+			} else if (language.equals("c#") || language.equals("csharp") || language.contentEquals("cs")) { // $NON-NLS-1$
+				return Languages.CSHARP;
 			} else if (language.equals("c")) { // $NON-NLS-1$
-				return LanguageNames.C;
+				return Languages.C;
 			} else if (language.equals("java")) { // $NON-NLS-1$
-				return LanguageNames.JAVA;
+				return Languages.JAVA;
 			} else if (language.equals("javascript")) { // $NON-NLS-1$
-				return LanguageNames.JAVASCRIPT;
-			} else if (language.equals("python")) { // $NON-NLS-1$
-				return LanguageNames.PYTHON;
+				return Languages.JAVASCRIPT;
+			} else if (language.equals("python") || language.contentEquals("py")) { // $NON-NLS-1$
+				return Languages.PYTHON;
 			} else if (language.equals("asm") || language.equals("assembly language") || language.equals("assembly")) { // $NON-NLS-1$
-				return LanguageNames.ASM;
+				return Languages.ASM;
 			}
 		}
 		return null;

@@ -1,6 +1,6 @@
 package com.vikas.method_parser.tags_manager.language_filter;
 
-public enum LanguageNames {
+public enum Languages {
 	CPP("C++"),
 	CSHARP("C#"),
 	C("C"),
@@ -37,7 +37,7 @@ public enum LanguageNames {
 	YACC("YACC");
 	
 	String language;
-	private LanguageNames(String language) {
+	private Languages(String language) {
 		this.language = language;
 	}
 }
