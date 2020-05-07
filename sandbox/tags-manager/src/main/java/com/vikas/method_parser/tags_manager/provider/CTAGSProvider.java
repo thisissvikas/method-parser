@@ -1,14 +1,13 @@
 package com.vikas.method_parser.tags_manager.provider;
 
 import com.vikas.method_parser.tags_manager.model.Tag;
-import java.io.File;
-import java.util.List;
+import com.vikas.method_parser.tags_manager.util.CloneGitRepository;
 
-import org.eclipse.jgit.api.Git;
-import org.eclipse.jgit.api.errors.GitAPIException;
+import java.util.List;
 
 
 public class CTAGSProvider implements TagsProvider{
+	static CloneGitRepository cloneRepo = new CloneGitRepository();
 	
     @Override
     public List<Tag> getTags() {
@@ -16,20 +15,12 @@ public class CTAGSProvider implements TagsProvider{
     }
     
     /**
-     * To checkout ctags in the temp folder.
+     * To checkout ctags in the given path.
      * @param cTagsURL : URL to clone CTags
      * @param checkoutPath : Path in which the CTags folder will be checked out
      */
     public static void checkoutCTags(String cTagsURL, String checkoutPath) {
-      try {
-        Git.cloneRepository()
-            .setURI(cTagsURL)
-            .setDirectory(new File(checkoutPath))
-            .call();
-      } catch (GitAPIException e) {
-        // Todo: Implement the logger and handle this.
-        e.printStackTrace();
-      }
+    	cloneRepo.checkoutRepo(cTagsURL,checkoutPath);
     }
     
 }
