@@ -5,5 +5,5 @@ import com.vikas.method_parser.tags_manager.model.Language;
 import java.util.List;
 
 public interface LanguageFilter {
-    void createFilter(List<Language> languages);
+    String createFilter(List<Language> languages);
 }

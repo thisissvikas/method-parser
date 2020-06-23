@@ -1,8 +1,8 @@
 package com.vikas.method_parser.tags_manager.provider;
 
-import com.vikas.method_parser.tags_manager.model.Tag;
+import java.nio.file.Path;
 import java.util.List;
 
 public interface TagsProvider {
-  List<Tag> getTags();
+  List<String> getTags(String languageFilter, Path pathToSourceCode);
 }
