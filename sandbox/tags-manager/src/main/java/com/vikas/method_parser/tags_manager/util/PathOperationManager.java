@@ -20,15 +20,6 @@ public class PathOperationManager {
     	return System.getProperty("java.io.tmpdir");
     }
     
-    /**
-     * Create a folder inside the temporary directory.
-     * @return path of the new folder 
-     */
-    public static String createFolderInTempDirectory() {
-    	String path = getTemporaryFileDirectory() + "\\method-parser";
-    	new File(path).mkdirs();
-    	return path;
-    }
     
     /**
      * To check if the given location is valid or not.
@@ -48,7 +39,7 @@ public class PathOperationManager {
      * Create a folder inside user-given location.
      * @return path of the new folder 
      */
-    private static String createFolderInUserGivenLocation(String location) {
+    public static String createMethodParserFolder(String location) {
     	String path = location + "\\method-parser";
     	File file = new File(location);
 		if(isPathValid(location) && file.canWrite()) {
