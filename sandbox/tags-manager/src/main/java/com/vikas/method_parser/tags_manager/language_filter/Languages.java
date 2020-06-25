@@ -36,8 +36,13 @@ public enum Languages {
 	VIM("Vim"),
 	YACC("YACC");
 	
-	String language;
-	private Languages(String language) {
-		this.language = language;
+	private String name;
+	private Languages(String name) {
+		this.name = name;
 	}
+	
+	public String getName() {
+		return name;
+	}
+	
 }

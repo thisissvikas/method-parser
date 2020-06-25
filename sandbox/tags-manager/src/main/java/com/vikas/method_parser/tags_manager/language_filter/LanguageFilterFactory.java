@@ -8,70 +8,114 @@ public class LanguageFilterFactory {
         return new CTAGSLanguageFilter();
     }
     
-    public static List<Languages> getLanguages(List<String> languageList) {
-		List<Languages> languageListForCTags = new ArrayList<Languages>();
-		Languages name = getLanguageName(languageList);
-		if (name != null) {
-			try {
-				switch (name) {
-				case JAVA:
-					if (languageList.contains(name.name())) {
-						languageListForCTags.add(name);
-					}
-					break;
-				case CPP:
-					if (languageList.contains(name.name())) {
-						languageListForCTags.add(name);
-					}
-					break;
-				case CSHARP:
-					if (languageList.contains(name.name())) {
-						 languageListForCTags.add(name);
-					}
-					break;
-				case C:
-					if (languageList.contains(name.name())) {
-						languageListForCTags.add(name);
-					}
-					break;
-				case PYTHON:
-					if (languageList.contains(name.name())) {
-						 languageListForCTags.add(name);
-					}
-					break;
-				case JAVASCRIPT:
-					if (languageList.contains(name.name())) {
-						languageListForCTags.add(name);
-					}
-				default:
-					break;
-				}
-			} catch (IllegalArgumentException e) {
-				//Implement logger logic here
-			}
-		}
-		return languageListForCTags;
-	}
-
-	private static Languages getLanguageName(List<String> languages) {
-		for(String language : languages) {
-			language = language.toLowerCase();
-			if (language.equals("c++") || language.equals("cpp")) {
-				return Languages.CPP;
-			} else if (language.equals("c#") || language.equals("csharp") || language.contentEquals("cs")) { // $NON-NLS-1$
-				return Languages.CSHARP;
-			} else if (language.equals("c")) { // $NON-NLS-1$
-				return Languages.C;
-			} else if (language.equals("java")) { // $NON-NLS-1$
-				return Languages.JAVA;
-			} else if (language.equals("javascript")) { // $NON-NLS-1$
-				return Languages.JAVASCRIPT;
-			} else if (language.equals("python") || language.contentEquals("py")) { // $NON-NLS-1$
-				return Languages.PYTHON;
-			} else if (language.equals("asm") || language.equals("assembly language") || language.equals("assembly")) { // $NON-NLS-1$
-				return Languages.ASM;
-			}
-		}
-		return null;
-	}
+    public static List<Languages> getLanguageList(List<String> languageList) {
+    	List<Languages> languageNames = new ArrayList<Languages>();
+    	for(String name : languageList) {
+    		name = name.toLowerCase();
+    		switch(name) {
+    		case "c++" :
+    			languageNames.add(Languages.CPP);
+    			break;
+    		case "c#" :
+    			languageNames.add(Languages.CSHARP);
+    			break;
+    		case "c" :
+    			languageNames.add(Languages.C);
+    			break;
+    		case "java" :
+    			languageNames.add(Languages.JAVA);
+    			break;
+    		case "python" :
+    			languageNames.add(Languages.PYTHON);
+    			break;
+    		case "asp" :
+    			languageNames.add(Languages.ASP);
+    			break;
+    		case "asm" :
+    			languageNames.add(Languages.ASM);
+    			break;
+    		case "awk" :
+    			languageNames.add(Languages.AWK);
+    			break;
+    		case "basic" :
+    			languageNames.add(Languages.BASIC);
+    			break;
+    		case "beta" :
+    			languageNames.add(Languages.BETA);
+    			break;
+    		case "cobol" :
+    			languageNames.add(Languages.COBOL);
+    			break;
+    		case "eiffel" :
+    			languageNames.add(Languages.EIFFEL);
+    			break;
+    		case "erlang" :
+    			languageNames.add(Languages.ERLANG);
+    			break;
+    		case "fortran" :
+    			languageNames.add(Languages.FORTRAN);
+    			break;
+    		case "html" :
+    			languageNames.add(Languages.HTML);
+    			break;
+    		case "lisp" :
+    			languageNames.add(Languages.LISP);
+    			break;
+    		case "lua" :
+    			languageNames.add(Languages.LUA);
+    			break;
+    		case "make" :
+    			languageNames.add(Languages.MAKE);
+    			break;
+    		case "pascal" :
+    			languageNames.add(Languages.PASCAL);
+    			break;
+    		case "perl" :
+    			languageNames.add(Languages.PERL);
+    			break;
+    		case "php" :
+    			languageNames.add(Languages.PHP);
+    			break;
+    		case "rexx" :
+    			languageNames.add(Languages.REXX);
+    			break;
+    		case "ruby" :
+    			languageNames.add(Languages.RUBY);
+    			break;
+    		case "scheme" :
+    			languageNames.add(Languages.SCHEME);
+    			break;
+    		case "slang" :
+    			languageNames.add(Languages.SLANG);
+    			break;
+    		case "sh" :
+    			languageNames.add(Languages.SH);
+    			break;
+    		case "sml" :
+    			languageNames.add(Languages.SML);
+    			break;
+    		case "sql" :
+    			languageNames.add(Languages.SQL);
+    			break;
+    		case "tcl" :
+    			languageNames.add(Languages.TCL);
+    			break;
+    		case "vera" :
+    			languageNames.add(Languages.VERA);
+    			break;
+    		case "verilog" :
+    			languageNames.add(Languages.VERILOG);
+    			break;
+    		case "vim" :
+    			languageNames.add(Languages.VIM);
+    			break;
+    		case "yacc" :
+    			languageNames.add(Languages.YACC);
+    			break;
+			default: 
+				break;
+    		}
+    	}
+    	return languageNames;
+    }
 }
