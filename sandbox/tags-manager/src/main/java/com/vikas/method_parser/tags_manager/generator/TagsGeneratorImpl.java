@@ -12,7 +12,6 @@ public class TagsGeneratorImpl implements TagsGenerator {
   public List<String> generateTags(Path pathToSourceCode, List<Language> languages) {
     LanguageFilter languageFilter = LanguageFilterFactory.getLanguageFilter();
     String languageFilterCommand = languageFilter.createFilter(languages);
-    languageFilter.createFilter(languages);
     UnifiedTagsProvider unifiedTagsProvider = new UnifiedTagsProvider();
     unifiedTagsProvider.getUnifiedTags(languageFilterCommand, pathToSourceCode);
     return null;

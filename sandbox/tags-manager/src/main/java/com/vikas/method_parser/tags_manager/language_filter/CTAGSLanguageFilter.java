@@ -6,7 +6,11 @@ import java.util.List;
 
 public class CTAGSLanguageFilter implements LanguageFilter {
   @Override
-  public String createFilter(List<Language> languages) {
-    return null;
+  public String createFilter(List<Language> languageList) {
+	  String languages = "";
+	  for(Language language : languageList) {
+		  languages = languages + "," + language.getName();
+	  }
+    return languages;
   }
 }
