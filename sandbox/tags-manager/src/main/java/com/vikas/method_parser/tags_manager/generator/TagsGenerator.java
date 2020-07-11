@@ -6,5 +6,5 @@ import java.nio.file.Path;
 import java.util.List;
 
 public interface TagsGenerator {
-    List<Tag> generateTags(Path pathToSourceCode, List<Language> languages);
+    List<String> generateTags(Path pathToSourceCode, List<Language> languages);
 }

@@ -9,7 +9,7 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class TagsGeneratorImpl implements TagsGenerator{
-    public List<Tag> generateTags(Path pathToSourceCode, List<Language> languages) {
+    public List<String> generateTags(Path pathToSourceCode, List<Language> languages) {
         LanguageFilter languageFilter = LanguageFilterFactory.getLanguageFilter();
         String languageFilterCommand = languageFilter.createFilter(languages);
         UnifiedTagsProvider unifiedTagsProvider = new UnifiedTagsProvider();
