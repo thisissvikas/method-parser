@@ -5,7 +5,7 @@ import com.vikas.method_parser.tags_manager.util.PathOperationManager;
 
 public class UCTAGSManager {
     public static String setup() {
-        checkoutCTags("", PathOperationManager.getTemporaryFileDirectory().toString());
+        checkoutCTags("", PathOperationManager.getTemporaryFileDirectory());
         return "";
     }
 
