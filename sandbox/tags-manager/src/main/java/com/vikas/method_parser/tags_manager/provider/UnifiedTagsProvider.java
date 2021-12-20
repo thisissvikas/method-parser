@@ -1,23 +1,22 @@
 package com.vikas.method_parser.tags_manager.provider;
 
-import com.vikas.method_parser.tags_manager.language_filter.LanguageFilter;
-import com.vikas.method_parser.tags_manager.model.Tag;
-
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 
 public class UnifiedTagsProvider {
-  public List<Tag> getUnifiedTags(LanguageFilter languageFilter) {
+  public List<String> getUnifiedTags(String languageFilter, Path pathToSourceCode) {
     // Todo: We have to decide how to do the filtering, that is why not passing the filter to
     // respective providers as of now.
-    List<Tag> tags = new ArrayList<>();
+    List<String> tags = new ArrayList<>();
     for (TagsProvider provider : TagsProviderFactory.getAllProviders()) {
-      tags.addAll(provider.getTags());
+      tags.addAll(provider.getTags(languageFilter, pathToSourceCode));
     }
     return getFinalTags(tags);
   }
 
-  private List<Tag> getFinalTags(List<Tag> tags) {
-    return null;
+  private List<String> getFinalTags(List<String> tags) {
+    // Todo: This will change if we have more than just U-CTAGS in use.
+    return tags;
   }
 }

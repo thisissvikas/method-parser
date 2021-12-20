@@ -6,7 +6,6 @@ import java.util.List;
 public class TagsProviderFactory {
     public static List<TagsProvider> getAllProviders(){
         List<TagsProvider> providers = new ArrayList<>();
-        providers.add(new CTAGSProvider());
         providers.add(new UCTAGSProvider());
         return providers;
     }

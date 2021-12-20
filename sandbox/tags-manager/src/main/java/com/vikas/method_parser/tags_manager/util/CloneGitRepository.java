@@ -15,7 +15,7 @@ public class CloneGitRepository {
 	 * @param URL : URL of the repository to be cloned.
 	 * @param checkoutPath : Path in which the repo will be cloned.
 	 */
-	 public void checkoutRepo(String URL, String checkoutPath) {
+	 public static void checkoutRepo(String URL, String checkoutPath) {
 	      try {
 	        Git.cloneRepository()
 	            .setURI(URL)
